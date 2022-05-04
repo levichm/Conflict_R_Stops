@@ -54,9 +54,7 @@ map.on('click', (event) => {
     .setLngLat(feature.geometry.coordinates)
     .setHTML(
       //`<h3>${feature.properties.name}</h3><p>${feature.properties.subwayentries}</p><img src = "${feature.properties.image}">`
-      `<h3>${feature.properties.name}</h3><p>${feature.properties.subwayentries}</p>
-      //<img src='feature.properties.image'style="width:500px;height:500px;">'</p>
-      `
+      `<h3>${feature.properties.name}</h3><p>${feature.properties.subwayentries}</p>`
     )
     .addTo(map);
 
