@@ -29,7 +29,7 @@
       // Replace YOUR_STYLE_URL with your style URL.
       style: 'mapbox://styles/levichm/cl2ddlc1s000g14s03cwo6w7o',
       //center: [40.692, -73.936],
-      //zoom: 11.5
+      //zoom: 10
     });
 
     /*
@@ -54,7 +54,7 @@ map.on('click', (event) => {
     .setLngLat(feature.geometry.coordinates)
     .setHTML(
       //`<h3>${feature.properties.name}</h3><p>${feature.properties.subwayentries}</p><img src = "${feature.properties.image}">`
-      `<h3>${feature.properties.name}</h3><p>${feature.properties.subwayentries}</p>`
+      `<h3>Name:</h3><h3>${feature.properties.name}</h3><p>Number of Entries:</p><p>${feature.properties.subwayentries}</p>`
     )
     .addTo(map);
 
