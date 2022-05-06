@@ -54,7 +54,7 @@ map.on('click', (event) => {
     .setLngLat(feature.geometry.coordinates)
     .setHTML(
       //`<h3>${feature.properties.name}</h3><p>${feature.properties.subwayentries}</p><img src = "${feature.properties.image}">`
-      `<h3>Name: ${feature.properties.name}</h3><p>Number of Entries: ${feature.properties.subwayentries}</p><p><a href="feature.properties.image"></a></h3>`
+      `<h3>Name: ${feature.properties.name}</h3><p>Number of Entries: ${feature.properties.subwayentries}</p><p><a href="${feature.properties.image}">View Ads</a></h3>`
     )
     .addTo(map);
 
